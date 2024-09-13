@@ -76,6 +76,7 @@ classdef bug < wl_experiment
                     WL.computeTrial();
                     WL.var.report = true;
                     WL.Timer.TrialDurationTimer.Reset();
+                    WL.trial_start();
                     WL.state_next(WL.State.TRIAL);
                 case WL.State.TRIAL
                     if WL.var.report
